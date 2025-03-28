@@ -4,8 +4,8 @@ from src.config import Config
 def create_app():
     app = Flask(
         __name__,
-        template_folder="src/templates",  # Set templates folder
-        static_folder="src/static"        # Set static folder
+        template_folder="../templates",  # Set templates folder
+        static_folder="../static"        # Set static folder
     )
     app.config.from_object(Config)  # Uncomment if needed
 
