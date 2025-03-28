@@ -6,6 +6,10 @@ def create_app():
     # app.config.from_object('Config')
 
     with app.app_context():
-        from . import routes
-        
+
+        from src.routes import home_bp
+        app.register_blueprint(home_bp)
         return app
+
+
+    
